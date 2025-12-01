@@ -1,0 +1,96 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+header {
+background: #1E3A8A;
+color: white;
+padding: 20px 10px;
+}
+header h1 {
+margin: 0;
+}
+nav ul {
+list-style: none;
+display: flex;
+padding: 0;
+}
+nav ul li {
+margin-right: 20px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+.hero {
+background: #93C5FD;
+padding: 50px 10px;
+text-align: center;
+}
+section.classes {
+padding: 20px 10px;
+}
+footer {
+background: #1E40AF;
+color: white;
+text-align: center;
+padding: 10px;
+}
+@media (max-width: 600px) {
+nav ul {
+flex-direction: column;
+}
+nav ul li {
+margin: 10px 0;
+}
+}
+/* About Hero Section */
+.about-hero {
+background: url('images/about-hero.jpg') center/cover no-repeat;
+height: 50vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+}
+.about-hero .hero-content h2 {
+font-size: 28px;
+margin-bottom: 10px;
+}
+.about-hero .hero-content p {
+font-size: 16px;
+}
+
+/* About Info Cards */
+.about-info {
+padding: 30px 10px;
+}
+.about-info .cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+.about-info .card {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+text-align: center;
+transition: 0.3s;
+}
+.about-info .card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* About Button */
+.about-button {
+text-align: center;
+margin-top: 20px;
+}
+.about-button .btn {
+padding: 12px 30px;
+font-size: 16px;
+}
